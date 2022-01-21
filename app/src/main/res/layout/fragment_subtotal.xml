@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/sixKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/nineKey"
+        app:layout_constraintEnd_toEndOf="@+id/threeKey"
+        app:layout_constraintStart_toStartOf="@+id/threeKey"
+        app:layout_constraintTop_toBottomOf="@+id/threeKey" />
+
+    <TextView
+        android:id="@+id/textViewSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtotal" />
+
+    <Button
+        android:id="@+id/oneKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/fourKey"
+        app:layout_constraintEnd_toStartOf="@+id/twoKey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/twoKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/fiveKey"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/threeKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/sixKey"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twoKey"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/fourKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/sevenKey"
+        app:layout_constraintEnd_toEndOf="@+id/oneKey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/oneKey"
+        app:layout_constraintTop_toBottomOf="@+id/oneKey" />
+
+    <Button
+        android:id="@+id/fiveKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/eightKey"
+        app:layout_constraintEnd_toEndOf="@+id/twoKey"
+        app:layout_constraintStart_toStartOf="@+id/twoKey"
+        app:layout_constraintTop_toBottomOf="@+id/twoKey" />
+
+    <Button
+        android:id="@+id/sevenKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/backKey"
+        app:layout_constraintEnd_toEndOf="@+id/fourKey"
+        app:layout_constraintStart_toStartOf="@+id/fourKey"
+        app:layout_constraintTop_toBottomOf="@+id/fourKey" />
+
+    <Button
+        android:id="@+id/eightKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/zeroKey"
+        app:layout_constraintEnd_toEndOf="@+id/fiveKey"
+        app:layout_constraintStart_toStartOf="@+id/fiveKey"
+        app:layout_constraintTop_toBottomOf="@+id/fiveKey" />
+
+    <Button
+        android:id="@+id/nineKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/nextKey"
+        app:layout_constraintEnd_toEndOf="@+id/sixKey"
+        app:layout_constraintStart_toStartOf="@+id/sixKey"
+        app:layout_constraintTop_toBottomOf="@+id/sixKey" />
+
+    <Button
+        android:id="@+id/backKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="@+id/sevenKey"
+        app:layout_constraintStart_toStartOf="@+id/sevenKey"
+        app:layout_constraintTop_toBottomOf="@+id/sevenKey" />
+
+    <Button
+        android:id="@+id/zeroKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="@+id/eightKey"
+        app:layout_constraintStart_toStartOf="@+id/eightKey"
+        app:layout_constraintTop_toBottomOf="@+id/eightKey" />
+
+    <Button
+        android:id="@+id/nextKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="@+id/nineKey"
+        app:layout_constraintStart_toStartOf="@+id/nineKey"
+        app:layout_constraintTop_toBottomOf="@+id/nineKey" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

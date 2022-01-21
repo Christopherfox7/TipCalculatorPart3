@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/subtotalFragment">
+
+    <fragment
+        android:id="@+id/subtotalFragment"
+        android:name="com.example.tipcalculatorpart3.SubtotalFragment"
+        android:label="SubtotalFragment" >
+        <action
+            android:id="@+id/action_subtotalFragment_to_tipFragmentFragment"
+            app:destination="@id/tipFragmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipFragmentFragment"
+        android:name="com.example.tipcalculatorpart3.TipFragmentFragment"
+        android:label="TipFragmentFragment" >
+        <action
+            android:id="@+id/action_tipFragmentFragment_to_finalTotalFragment"
+            app:destination="@id/finalTotalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalTotalFragment"
+        android:name="com.example.tipcalculatorpart3.FinalTotalFragment"
+        android:label="fragment_final_total"
+        tools:layout="@layout/fragment_final_total" />
+</navigation>
